@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8E7E7DF6-6ADC-BFB3-5CFD-18B53BC1D125}</ProjectGuid>
+    <ProjectGuid>{627DDF39-11AE-455D-7248-95157C6C5725}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -49,7 +49,9 @@
      <Compile Include="Assets\My Scripts\Checkpoint.cs" />
      <Compile Include="Assets\My Scripts\Controller2D.cs" />
      <Compile Include="Assets\My Scripts\DestroyFinishedParticle.cs" />
+     <Compile Include="Assets\My Scripts\EnemyBulletForce.cs" />
      <Compile Include="Assets\My Scripts\EnemyScript.cs" />
+     <Compile Include="Assets\My Scripts\EnemyShooter.cs" />
      <Compile Include="Assets\My Scripts\ExitButton.cs" />
      <Compile Include="Assets\My Scripts\GunSpawnPointTurner.cs" />
      <Compile Include="Assets\My Scripts\GunTurner.cs" />
@@ -62,14 +64,13 @@
      <Compile Include="Assets\My Scripts\PositionRestter.cs" />
      <Compile Include="Assets\My Scripts\ScalableCamera.cs" />
      <Compile Include="Assets\My Scripts\Shooter.cs" />
+     <Compile Include="Assets\My Scripts\ShotDamage.cs" />
+     <Compile Include="Assets\My Scripts\TankHealth.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>E:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="PlayMaker">
- <HintPath>F:/SAE Qantm Files/Modules/Trimester 2/Product 1 - Game Development (GAM112)/Unity Project/2D Side Scroller/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

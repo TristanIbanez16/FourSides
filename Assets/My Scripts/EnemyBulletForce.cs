@@ -9,24 +9,19 @@ public class EnemyBulletForce : MonoBehaviour {
     public GameObject bulletImpactEffect;
     public GameObject enemyDeathEffect;
 
+    public LevelManager levelManager;
+
     // Use this for initialization
     void Start()
     {
         GetComponent<Rigidbody2D>().AddForce(magnitude * transform.right);
         Destroy(gameObject, 5);
+        levelManager = FindObjectOfType<LevelManager>();
     }
 
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D other)
     {
-        // if the object that the bullet hits has this tag, the object will be destroyed and then spawn a prefab
-        if (other.tag == "Player")
-        {
-            Instantiate(enemyDeathEffect, other.transform.position, other.transform.rotation);
-            Instantiate(bulletImpactEffect, transform.position, transform.rotation);
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-        }
 
         if (other.tag == "Level")
         {

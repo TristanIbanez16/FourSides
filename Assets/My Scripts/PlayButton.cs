@@ -6,6 +6,6 @@ public class PlayButton : MonoBehaviour {
 
     public void onClick()
     {
-        SceneManager.LoadScene("Four Sides Prototype Level");
+        SceneManager.LoadScene("Level 1");
     }
 }

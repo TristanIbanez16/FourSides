@@ -5,6 +5,7 @@ using System.Collections;
 public class Controller2D : MonoBehaviour {
 
     public LayerMask collisionMask;
+    public LayerMask blockingVolume;
 
     const float skinWidth = 0.015f;
     public int horizontalRayCount = 4;
@@ -60,7 +61,7 @@ public class Controller2D : MonoBehaviour {
         {
             Vector2 rayOrigin = (directionX == -1) ? raycastOrigins.bottomLeft : raycastOrigins.bottomRight;
             rayOrigin += Vector2.up * (horizontalRaySpacing * i);
-            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, collisionMask);
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.right * directionX, rayLength, collisionMask, blockingVolume);
 
             Debug.DrawRay(rayOrigin, Vector2.right * directionX * rayLength, Color.red);
 

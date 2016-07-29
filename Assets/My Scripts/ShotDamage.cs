@@ -20,7 +20,7 @@ public class ShotDamage : MonoBehaviour {
 	
 	}
 
-    void OnTriggerEnter(Collider2D other)
+    void OnTriggerEnter()
     {
         // ... the player is in range.
         Attack();

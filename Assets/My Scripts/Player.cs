@@ -4,6 +4,8 @@ using System.Collections;
 [RequireComponent (typeof(Controller2D))]
 public class Player : MonoBehaviour {
 
+    public LayerMask blockingVolume;
+
     public float maxJumpHeight = 4;
     public float minJumpHeight = 1;
     public float timeToJumpApex = 0.4f;

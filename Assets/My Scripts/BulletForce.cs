@@ -29,7 +29,7 @@ public class BulletForce : MonoBehaviour {
         if(other.tag == "Enemy")
         {
             Instantiate(enemyDeathEffect, other.transform.position, other.transform.rotation);
-            Instantiate(bulletImpactEffect, transform.position, transform.rotation);
+
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
@@ -44,7 +44,8 @@ public class BulletForce : MonoBehaviour {
         if (other.tag == "Enemy Tank")
         {
             Instantiate(enemyDeathEffect, other.transform.position, other.transform.rotation);
-            Instantiate(bulletImpactEffect, transform.position, transform.rotation);
+
+            Destroy(gameObject);
             // If the player has health to lose...
             if (tankHealth.currentHealth > 0)
             {

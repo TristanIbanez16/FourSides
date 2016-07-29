@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour {
     public GameObject DeathParticleEffect;
 
     public GameObject Player;
-    public GameObject PlayerGun;
+
     public GameObject BulletSpawnPoint;
 
     private Player player;
@@ -39,7 +39,7 @@ public class LevelManager : MonoBehaviour {
         player.GetComponent<Renderer>().enabled = false;
 
         Player.SetActive(false);
-        PlayerGun.SetActive(false);
+
         BulletSpawnPoint.SetActive(false);
 
         yield return new WaitForSeconds(respawnDelay);  
@@ -48,7 +48,7 @@ public class LevelManager : MonoBehaviour {
         player.GetComponent<Renderer>().enabled = true;
 
         Player.SetActive(true);
-        PlayerGun.SetActive(true);
+
         BulletSpawnPoint.SetActive(true);
 
         Instantiate(RespawnParticle, currentCheckpoint.transform.position, currentCheckpoint.transform.rotation);

@@ -90,7 +90,7 @@ public class Player : MonoBehaviour {
         }
 
         anim.SetFloat("Speed", velocity.magnitude);
-        Debug.Log("Velocity: " + velocity.magnitude);
+        //Debug.Log("Velocity: " + velocity.magnitude);
 
         
 

@@ -56,8 +56,11 @@
      <Compile Include="Assets\My Scripts\GunSpawnPointTurner.cs" />
      <Compile Include="Assets\My Scripts\GunTurner.cs" />
      <Compile Include="Assets\My Scripts\KillPlayer.cs" />
+     <Compile Include="Assets\My Scripts\LevelChanger.cs" />
      <Compile Include="Assets\My Scripts\LevelManager.cs" />
      <Compile Include="Assets\My Scripts\Pause1.cs" />
+     <Compile Include="Assets\My Scripts\PickupManager.cs" />
+     <Compile Include="Assets\My Scripts\PickupScript.cs" />
      <Compile Include="Assets\My Scripts\PlayButton.cs" />
      <Compile Include="Assets\My Scripts\Player.cs" />
      <Compile Include="Assets\My Scripts\PlayerMovement.cs" />

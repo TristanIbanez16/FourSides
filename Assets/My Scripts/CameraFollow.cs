@@ -49,16 +49,13 @@ public class CameraFollow : MonoBehaviour {
             }
         }
 
-        targetLookAheadX = lookAheadDirectionX * lookAheadDistanceX;
+        //targetLookAheadX = lookAheadDirectionX * lookAheadDistanceX;
         currentLookAheadX = Mathf.SmoothDamp(currentLookAheadX, targetLookAheadX, ref smoothLookVelocityX, lookSmoothTimeX);
 
         focusPosition.y = Mathf.SmoothDamp(transform.position.y, focusPosition.y, ref smoothVelocityY, verticalSmoothTime);
         focusPosition += Vector2.right * currentLookAheadX;
         transform.position = (Vector3)focusPosition + Vector3.forward * -10;
     }
-
-        
-    
 
     void OnDrawGizmos()
     {

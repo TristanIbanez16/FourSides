@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\My Scripts\BulletForce.cs" />
+     <Compile Include="Assets\My Scripts\CameraFollow.cs" />
      <Compile Include="Assets\My Scripts\Checkpoint.cs" />
      <Compile Include="Assets\My Scripts\Controller2D.cs" />
      <Compile Include="Assets\My Scripts\DestroyFinishedParticle.cs" />
@@ -59,12 +60,13 @@
      <Compile Include="Assets\My Scripts\LevelChanger.cs" />
      <Compile Include="Assets\My Scripts\LevelManager.cs" />
      <Compile Include="Assets\My Scripts\Pause1.cs" />
+     <Compile Include="Assets\My Scripts\PickupAnimation.cs" />
      <Compile Include="Assets\My Scripts\PickupManager.cs" />
-     <Compile Include="Assets\My Scripts\PickupScript.cs" />
      <Compile Include="Assets\My Scripts\PlayButton.cs" />
      <Compile Include="Assets\My Scripts\Player.cs" />
      <Compile Include="Assets\My Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\My Scripts\PositionRestter.cs" />
+     <Compile Include="Assets\My Scripts\RaycastController.cs" />
      <Compile Include="Assets\My Scripts\ScalableCamera.cs" />
      <Compile Include="Assets\My Scripts\Shooter.cs" />
      <Compile Include="Assets\My Scripts\ShotDamage.cs" />

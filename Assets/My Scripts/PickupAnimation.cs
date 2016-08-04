@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PickupScript : MonoBehaviour {
+public class PickupAnimation : MonoBehaviour {
 
-    public float rotateSpeed = 500.0f;
+    public float rotateSpeed = 100.0f;
 
     // Update is called once per frame
     void Update()

@@ -10,7 +10,6 @@ public class LevelChanger : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            Debug.Log("Hi!");
             // load the named level
             SceneManager.LoadScene(Level);
         }

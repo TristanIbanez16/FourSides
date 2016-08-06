@@ -11,8 +11,15 @@ public class ShotDamage : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        TankEnemy = GameObject.Find("Tank Enemy");
-        tankHealth = TankEnemy.GetComponent<TankHealth>();
+        if (!GameObject.Find("Tank Enemy"))
+        {
+            return;
+        }
+        else if (GameObject.Find("Tank Enemy"))
+        {
+            TankEnemy = GameObject.Find("Tank Enemy");
+            tankHealth = TankEnemy.GetComponent<TankHealth>();
+        }
 	}
 	
 	// Update is called once per frame

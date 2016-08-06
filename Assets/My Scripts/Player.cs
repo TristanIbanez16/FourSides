@@ -45,6 +45,8 @@ public class Player : MonoBehaviour {
 
         anim = GetComponent<Animator>();
 
+        anim.SetBool("Shooting", false);
+
     }
 	
     void Update()
@@ -89,8 +91,15 @@ public class Player : MonoBehaviour {
 
         anim.SetFloat("Speed", velocity.magnitude);
         //Debug.Log("Velocity: " + velocity.magnitude);
+        if(Input.GetMouseButtonDown(0))
+        {
+            anim.SetBool("Shooting", true);   
+        }
 
-        
+        if (Input.GetMouseButtonUp(0))
+        {
+            anim.SetBool("Shooting", false);
+        }
 
         bool wallSliding = false;
 

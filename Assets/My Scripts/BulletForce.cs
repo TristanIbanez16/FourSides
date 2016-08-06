@@ -18,8 +18,16 @@ public class BulletForce : MonoBehaviour {
 	{
 		GetComponent<Rigidbody2D> ().AddForce (magnitude * transform.right);
 		Destroy (gameObject, 5);
-        TankEnemy = GameObject.Find("Tank Enemy");
-        tankHealth = TankEnemy.GetComponent<TankHealth>();
+
+        if (!GameObject.Find("Tank Enemy"))
+        {
+            return;
+        }
+        else if (GameObject.Find("Tank Enemy"))
+        {
+            TankEnemy = GameObject.Find("Tank Enemy");
+            tankHealth = TankEnemy.GetComponent<TankHealth>();
+        }
     }
 	
 	// Update is called once per frame

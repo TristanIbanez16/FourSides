@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: e362cfff257ea9a468dfa8cbfc30ad93
-timeCreated: 1466342673
+guid: 9f2c2d39e017b6b48a5a3c13e68e9fc5
+timeCreated: 1470464030
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Player_Moving_1
-    21300002: Player_Moving_2
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -28,10 +26,10 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -2
+  textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -40,48 +38,18 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 67
+  spritePixelsToUnits: 400
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: Player_Moving_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 67
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -33.5, y: 33.5}
-        - {x: -33.5, y: -33.5}
-        - {x: 33.5, y: -33.5}
-        - {x: 33.5, y: 33.5}
-    - name: Player_Moving_2
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 0
-        width: 68
-        height: 59
-      alignment: 9
-      pivot: {x: 0.5, y: 0.565}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 25.665}
-        - {x: -34, y: -33.335}
-        - {x: 34, y: -33.335}
-        - {x: 34, y: 25.665}
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 

@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: e362cfff257ea9a468dfa8cbfc30ad93
-timeCreated: 1466342673
+guid: 4eeeb71075d7b2a4cb2ec16b33157d3f
+timeCreated: 1470460948
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Player_Moving_1
-    21300002: Player_Moving_2
+    21300000: 4 Sides Sprites_Moving_1
+    21300002: 4 Sides Sprites_Moving_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,7 +29,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -2
-  maxTextureSize: 2048
+  maxTextureSize: 4096
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -46,42 +46,42 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 67
+  spritePixelsToUnits: 200
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Player_Moving_1
+    - name: 4 Sides Sprites_Moving_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 67
-        height: 67
+        width: 207
+        height: 198
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -33.5, y: 33.5}
-        - {x: -33.5, y: -33.5}
-        - {x: 33.5, y: -33.5}
-        - {x: 33.5, y: 33.5}
-    - name: Player_Moving_2
+      - - {x: -103.5, y: 99}
+        - {x: -103.5, y: -99}
+        - {x: 103.5, y: -99}
+        - {x: 103.5, y: 99}
+    - name: 4 Sides Sprites_Moving_2
       rect:
         serializedVersion: 2
-        x: 70
+        x: 221
         y: 0
-        width: 68
-        height: 59
-      alignment: 9
-      pivot: {x: 0.5, y: 0.565}
+        width: 207
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -34, y: 25.665}
-        - {x: -34, y: -33.335}
-        - {x: 34, y: -33.335}
-        - {x: 34, y: 25.665}
+      - - {x: -103.5, y: 78}
+        - {x: -103.5, y: -78}
+        - {x: 103.5, y: -78}
+        - {x: 103.5, y: 78}
     outline: []
   spritePackingTag: 
   userData: 

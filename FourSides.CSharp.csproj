@@ -81,6 +81,7 @@
     <Compile Include="Assets\My Scripts\EnemyScript.cs" />
     <Compile Include="Assets\My Scripts\EnemyShooter.cs" />
     <Compile Include="Assets\My Scripts\ExitButton.cs" />
+    <Compile Include="Assets\My Scripts\Fading.cs" />
     <Compile Include="Assets\My Scripts\GunSpawnPointTurner.cs" />
     <Compile Include="Assets\My Scripts\GunTurner.cs" />
     <Compile Include="Assets\My Scripts\KillPlayer.cs" />

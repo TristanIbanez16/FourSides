@@ -10,8 +10,16 @@ public class LevelChanger : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            // load the named level
-            SceneManager.LoadScene(Level);
+            StartCoroutine("ChangeLevelCo");
         }
+    }
+
+    public IEnumerator ChangeLevelCo()
+    {
+        yield return new WaitForSeconds(0.6f);
+
+        float fadeTime = GameObject.Find("Level Fade").GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
+        SceneManager.LoadScene(Level);
     }
 }

@@ -9,7 +9,7 @@ public class Player : MonoBehaviour {
     public float timeToJumpApex = 0.4f;
     float accelerationTimeAirborne = 0.2f;
     float accelerationTimeGrounded = 0.1f;
-    float moveSpeed = 6;
+    public float moveSpeed = 6;
 
     public Vector2 wallJumpClimb;
     public Vector2 wallJumpOff;

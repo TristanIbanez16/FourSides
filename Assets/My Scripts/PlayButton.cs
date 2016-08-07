@@ -9,7 +9,6 @@ public class PlayButton : MonoBehaviour {
     public void onClick()
     {
         StartCoroutine("ChangeLevelCo");
-        SceneManager.LoadScene("Level 1");
     }
 
     public IEnumerator ChangeLevelCo()

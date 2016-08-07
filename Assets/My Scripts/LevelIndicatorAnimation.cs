@@ -19,7 +19,7 @@ public class LevelIndicatorAnimation : MonoBehaviour {
 
         blurEffect = GetComponent<DepthOfField>();
 
-        playerMovement = GameObject.FindGameObjectWithTag("Player");
+        playerMovement = GameObject.Find("Player - Game");
         player = playerMovement.GetComponent<Player>();
 
         player.enabled = false;

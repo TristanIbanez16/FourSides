@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: c49ef7e6b6f70bd49a49663aaf69079c
+timeCreated: 1470562220
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Spikes_Long
+    21300002: Spikes_Short
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 250
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: Spikes_Long
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 691
+        height: 475
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 6, w: 0}
+      outline:
+      - - {x: 324.5, y: -151.5}
+        - {x: 316.5, y: -98.5}
+        - {x: 288.5, y: 117.5}
+        - {x: 288.5, y: 125.5}
+        - {x: 276.5, y: 218.5}
+        - {x: 272.5, y: 237.5}
+        - {x: 266.5, y: 237.5}
+        - {x: 262.5, y: 221.5}
+        - {x: 249.5, y: 105.5}
+        - {x: 244.5, y: 74.5}
+        - {x: 232.5, y: -25.5}
+        - {x: 221.5, y: -102.5}
+        - {x: 217.5, y: -141.5}
+        - {x: 213.5, y: -130.5}
+        - {x: 209.5, y: -99.5}
+        - {x: 178.5, y: 129.5}
+        - {x: 164.5, y: 237.5}
+        - {x: 158.5, y: 237.5}
+        - {x: 156.5, y: 223.5}
+        - {x: 133.5, y: 46.5}
+        - {x: 128.5, y: 15.5}
+        - {x: 116.5, y: -84.5}
+        - {x: 106.5, y: -155.5}
+        - {x: 104.5, y: -134.5}
+        - {x: 81.5, y: 42.5}
+        - {x: 56.5, y: 235.5}
+        - {x: 55.5, y: 237.5}
+        - {x: 49.5, y: 237.5}
+        - {x: 39.5, y: 165.5}
+        - {x: 33.5, y: 110.5}
+        - {x: 25.5, y: 56.5}
+        - {x: 14.5, y: -28.5}
+        - {x: 1.5, y: -135.5}
+        - {x: -1.5, y: -151.5}
+        - {x: -23.5, y: 17.5}
+        - {x: -25.5, y: 41.5}
+        - {x: -28.5, y: 64.5}
+        - {x: -48.5, y: 217.5}
+        - {x: -52.5, y: 237.5}
+        - {x: -58.5, y: 237.5}
+        - {x: -62.5, y: 221.5}
+        - {x: -75.5, y: 105.5}
+        - {x: -80.5, y: 74.5}
+        - {x: -92.5, y: -25.5}
+        - {x: -103.5, y: -102.5}
+        - {x: -109.5, y: -153.5}
+        - {x: -111.5, y: -130.5}
+        - {x: -121.5, y: -62.5}
+        - {x: -157.5, y: 214.5}
+        - {x: -160.5, y: 237.5}
+        - {x: -166.5, y: 237.5}
+        - {x: -169.5, y: 223.5}
+        - {x: -195.5, y: 15.5}
+        - {x: -207.5, y: -69.5}
+        - {x: -218.5, y: -155.5}
+        - {x: -219.5, y: -133.5}
+        - {x: -225.5, y: -95.5}
+        - {x: -268.5, y: 235.5}
+        - {x: -269.5, y: 237.5}
+        - {x: -275.5, y: 237.5}
+        - {x: -277.5, y: 225.5}
+        - {x: -294.5, y: 87.5}
+        - {x: -299.5, y: 56.5}
+        - {x: -311.5, y: -43.5}
+        - {x: -323.5, y: -128.5}
+        - {x: -329.5, y: -176.5}
+        - {x: -345.5, y: -176.5}
+        - {x: -345.5, y: -237.5}
+        - {x: 343.5, y: -237.5}
+        - {x: 343.5, y: -178.5}
+        - {x: 341.5, y: -176.5}
+        - {x: 326.5, y: -173.5}
+    - name: Spikes_Short
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 0
+        width: 587
+        height: 476
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 5, w: 0}
+      outline:
+      - - {x: 279.5, y: -160}
+        - {x: 248.5, y: -17}
+        - {x: 218.5, y: 121}
+        - {x: 215.5, y: 135}
+        - {x: 195.5, y: 227}
+        - {x: 194.5, y: 231}
+        - {x: 192.5, y: 236}
+        - {x: 188.5, y: 236}
+        - {x: 185.5, y: 230}
+        - {x: 185.5, y: 225}
+        - {x: 173.5, y: 175}
+        - {x: 124.5, y: -30}
+        - {x: 113.5, y: -76}
+        - {x: 101.5, y: -126}
+        - {x: 94.5, y: -156}
+        - {x: 92.5, y: -162}
+        - {x: 91.5, y: -149}
+        - {x: 86.5, y: -131}
+        - {x: 76.5, y: -85}
+        - {x: 48.5, y: 44}
+        - {x: 18.5, y: 182}
+        - {x: 7.5, y: 232}
+        - {x: 4.5, y: 236}
+        - {x: 3.5, y: 236}
+        - {x: 0.5, y: 232}
+        - {x: -1.5, y: 224}
+        - {x: -13.5, y: 174}
+        - {x: -46.5, y: 36}
+        - {x: -63.5, y: -35}
+        - {x: -90.5, y: -148}
+        - {x: -94.5, y: -163}
+        - {x: -95.5, y: -150}
+        - {x: -97.5, y: -146}
+        - {x: -105.5, y: -109}
+        - {x: -140.5, y: 52}
+        - {x: -173.5, y: 204}
+        - {x: -179.5, y: 231}
+        - {x: -182.5, y: 234}
+        - {x: -185.5, y: 233}
+        - {x: -187.5, y: 226}
+        - {x: -194.5, y: 196}
+        - {x: -199.5, y: 175}
+        - {x: -211.5, y: 125}
+        - {x: -266.5, y: -105}
+        - {x: -281.5, y: -168}
+        - {x: -281.5, y: -171}
+        - {x: -293.5, y: -171}
+        - {x: -293.5, y: -238}
+        - {x: 293.5, y: -238}
+        - {x: 293.5, y: -171}
+        - {x: 281.5, y: -171}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

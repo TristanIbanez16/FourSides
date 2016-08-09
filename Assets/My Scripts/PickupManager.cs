@@ -6,7 +6,7 @@ public class PickupManager : MonoBehaviour {
     GameObject bulletSpawnPoint;
     Shooter rateOfFire;
 
-    public float timer;
+    private float timer;
 
     void Start()
     {

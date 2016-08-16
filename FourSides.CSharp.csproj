@@ -56,12 +56,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -84,6 +78,7 @@
     <Compile Include="Assets\My Scripts\BulletForce.cs" />
     <Compile Include="Assets\My Scripts\CameraFollow.cs" />
     <Compile Include="Assets\My Scripts\Checkpoint.cs" />
+    <Compile Include="Assets\My Scripts\ContinueButton.cs" />
     <Compile Include="Assets\My Scripts\Controller2D.cs" />
     <Compile Include="Assets\My Scripts\DestroyFinishedParticle.cs" />
     <Compile Include="Assets\My Scripts\DontDestroyOnLoad.cs" />
@@ -98,7 +93,9 @@
     <Compile Include="Assets\My Scripts\LevelChanger.cs" />
     <Compile Include="Assets\My Scripts\LevelIndicatorAnimation.cs" />
     <Compile Include="Assets\My Scripts\LevelManager.cs" />
+    <Compile Include="Assets\My Scripts\MainMenu.cs" />
     <Compile Include="Assets\My Scripts\Pause1.cs" />
+    <Compile Include="Assets\My Scripts\PauseMenu.cs" />
     <Compile Include="Assets\My Scripts\PickupAnimation.cs" />
     <Compile Include="Assets\My Scripts\PickupManager.cs" />
     <Compile Include="Assets\My Scripts\PlayButton.cs" />
@@ -106,10 +103,12 @@
     <Compile Include="Assets\My Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\My Scripts\PositionRestter.cs" />
     <Compile Include="Assets\My Scripts\RaycastController.cs" />
+    <Compile Include="Assets\My Scripts\Restart.cs" />
     <Compile Include="Assets\My Scripts\ScalableCamera.cs" />
     <Compile Include="Assets\My Scripts\Shooter.cs" />
     <Compile Include="Assets\My Scripts\ShotDamage.cs" />
     <Compile Include="Assets\My Scripts\TankHealth.cs" />
+    <Compile Include="Assets\My Scripts\Timer.cs" />
     <Compile Include="Assets\My Scripts\TwoTargetMover.cs" />
     <Compile Include="Assets\PlayMaker\Actions\ActivateGameObject.cs" />
     <Compile Include="Assets\PlayMaker\Actions\AddAnimationClip.cs" />

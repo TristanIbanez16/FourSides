@@ -2,26 +2,22 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class LevelChanger : MonoBehaviour {
+public class Restart : MonoBehaviour {
+
+    public AudioSource playerAudio;                             // Reference to the AudioSource component.
+    public AudioClip click;
 
     public string Level;
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.tag == "Player")
-        {
-            StartCoroutine("ChangeLevelCo");
-        }
-    }
 
     public void OnClick()
     {
         StartCoroutine("ChangeLevelCo");
-        
+
     }
 
     public IEnumerator ChangeLevelCo()
     {
+        Debug.Log("Hi");
         yield return new WaitForSeconds(0.6f);
 
         float fadeTime = GameObject.Find("Level Fade").GetComponent<Fading>().BeginFade(1);

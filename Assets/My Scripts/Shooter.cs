@@ -12,7 +12,7 @@ public class Shooter : MonoBehaviour {
 	void Update () 
 	{
         // if the player presses left-click or enter, the gun fires.
-		if(Input.GetButtonDown("Fire1") || Input.GetKey(KeyCode.Return))
+		if(Input.GetButtonDown("Fire1"))
 		{
 			if(Time.time > nextFire)
 			{

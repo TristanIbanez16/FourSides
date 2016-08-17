@@ -15,16 +15,15 @@ public class LevelManager : MonoBehaviour {
     private Player player;
 
     public float respawnDelay;
-    
+
+    KillPlayer playerDeathsCount;
+
+    public static float playerDeaths = 0f;
+
     // Use this for initialization
-	void Start ()
+    void Start ()
     {
         player = FindObjectOfType<Player>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 
     public void RespawnPlayer()
@@ -34,6 +33,7 @@ public class LevelManager : MonoBehaviour {
 
     public IEnumerator RespawnPlayerCo()
     {
+        playerDeaths = 1f;
         Instantiate(DeathParticleEffect, player.transform.position, player.transform.rotation);
         player.enabled = false;
         player.GetComponent<Renderer>().enabled = false;

@@ -9,6 +9,8 @@ public class ContinueButton : MonoBehaviour {
 
     Camera MainCamera;
     BlurOptimized blurEffect;
+    Player playerController;
+    Shooter playerControllerShooter;
 
     bool paused = false;
 
@@ -19,6 +21,8 @@ public class ContinueButton : MonoBehaviour {
     {
         MainCamera = GameObject.Find("Game Camera").GetComponent<Camera>();
         blurEffect = MainCamera.GetComponent<BlurOptimized>();
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        playerControllerShooter = GameObject.Find("Bullet Spawn Point").GetComponent<Shooter>();
     }
 
     public void OnClick()
@@ -27,6 +31,8 @@ public class ContinueButton : MonoBehaviour {
         //playerAudio.Play();
 
         Time.timeScale = 1f;
+        playerController.enabled = true;
+        playerControllerShooter.enabled = true;
         Canvas.enabled = true;
         blurEffect.enabled = false;
 

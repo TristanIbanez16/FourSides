@@ -7,6 +7,9 @@ public class PauseMenu : MonoBehaviour {
     Camera MainCamera;
     BlurOptimized blurEffect;
 
+    Player playerController;
+    Shooter playerControllerShooter;
+
     bool paused = false;
 
     public GameObject PauseMenuCanvas;
@@ -17,6 +20,8 @@ public class PauseMenu : MonoBehaviour {
     {
         MainCamera = GameObject.Find("Game Camera").GetComponent<Camera>();
         blurEffect = MainCamera.GetComponent<BlurOptimized>();
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        playerControllerShooter = GameObject.Find("Bullet Spawn Point").GetComponent<Shooter>();
     }
 
     // Update is called once per frame
@@ -36,7 +41,8 @@ public class PauseMenu : MonoBehaviour {
             Time.timeScale = 1f;
             Canvas.enabled = true;
             blurEffect.enabled = false;
-
+            playerController.enabled = true;
+            playerControllerShooter.enabled = true;
 
             PauseMenuCanvas.SetActive(false);
 
@@ -46,6 +52,8 @@ public class PauseMenu : MonoBehaviour {
         else
         {
             blurEffect.enabled = true;
+            playerController.enabled = false;
+            playerControllerShooter.enabled = false;
 
             PauseMenuCanvas.SetActive(true);
 

@@ -7,6 +7,7 @@ public class EnemyScript : MonoBehaviour
 
     public LevelManager levelManager;
 
+
     void Start()
     {
         levelManager = FindObjectOfType<LevelManager>();

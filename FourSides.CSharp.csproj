@@ -108,6 +108,7 @@
     <Compile Include="Assets\My Scripts\Shooter.cs" />
     <Compile Include="Assets\My Scripts\ShotDamage.cs" />
     <Compile Include="Assets\My Scripts\TankHealth.cs" />
+    <Compile Include="Assets\My Scripts\TimeReset.cs" />
     <Compile Include="Assets\My Scripts\Timer.cs" />
     <Compile Include="Assets\My Scripts\TwoTargetMover.cs" />
     <Compile Include="Assets\PlayMaker\Actions\ActivateGameObject.cs" />

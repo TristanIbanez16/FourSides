@@ -4,10 +4,18 @@ using System.Collections;
 
 public class Shooter : MonoBehaviour {
 
-	public GameObject BulletPrefab;
+    public AudioSource playerAudio;                             // Reference to the AudioSource component.
+    public AudioClip shoot;
+
+    public GameObject BulletPrefab;
 
 	public float fireRate = 1.0f;
 	public float nextFire = 0.0f;
+
+    void Start()
+    {
+        playerAudio = GetComponent<AudioSource>();
+    }
 
 	// Update is called once per frame
 	void Update () 
@@ -19,7 +27,11 @@ public class Shooter : MonoBehaviour {
 			{
 				//Debug.Log("Click");
 				nextFire = Time.time + fireRate;
-				Instantiate (BulletPrefab, transform.position, transform.rotation);
+
+                playerAudio.clip = shoot;
+                playerAudio.Play();
+
+                Instantiate (BulletPrefab, transform.position, transform.rotation);
 			}
 		}
 	}

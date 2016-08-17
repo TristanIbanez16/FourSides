@@ -36,6 +36,7 @@ public class LevelChanger : MonoBehaviour {
 
     void Start()
     {
+
         Pause = GameObject.Find("Game Manager").GetComponent<PauseMenu>();
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         timer = GameObject.Find("Time").GetComponent<Timer>();
@@ -103,7 +104,7 @@ public class LevelChanger : MonoBehaviour {
             Instantiate(CCanvas, transform.position, transform.rotation);
         }
 
-        if (Timer.timer >= CTimeRange && Timer.timer <= DTimeRange - 0.1f)
+        if (Timer.timer >= CTimeRange)
         {
             blurEffect.enabled = true;
             Instantiate(DCanvas, transform.position, transform.rotation);

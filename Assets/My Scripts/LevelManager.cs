@@ -3,6 +3,11 @@ using System.Collections;
 
 public class LevelManager : MonoBehaviour {
 
+    public AudioSource playerAudio;                             // Reference to the AudioSource component.
+    public AudioClip dying;
+    public AudioClip playerRespawn;
+    public AudioClip enemyDeath;
+
     public GameObject currentCheckpoint;
 
     public GameObject RespawnParticle;
@@ -24,17 +29,29 @@ public class LevelManager : MonoBehaviour {
     void Start ()
     {
         player = FindObjectOfType<Player>();
-	}
+        playerAudio = GetComponent<AudioSource>();
+    }
 
     public void RespawnPlayer()
     {
         StartCoroutine("RespawnPlayerCo");
     }
 
+    public void EnemyDeath()
+    {
+        playerAudio.clip = enemyDeath;
+        playerAudio.Play();
+    }
+
     public IEnumerator RespawnPlayerCo()
     {
         playerDeaths = 1f;
+
+        playerAudio.clip = dying;
+        playerAudio.Play();
+
         Instantiate(DeathParticleEffect, player.transform.position, player.transform.rotation);
+
         player.enabled = false;
         player.GetComponent<Renderer>().enabled = false;
 
@@ -42,7 +59,11 @@ public class LevelManager : MonoBehaviour {
 
         BulletSpawnPoint.SetActive(false);
 
-        yield return new WaitForSeconds(respawnDelay);  
+        yield return new WaitForSeconds(respawnDelay);
+
+        playerAudio.clip = playerRespawn;
+        playerAudio.Play();
+
         player.transform.position = currentCheckpoint.transform.position;
         player.enabled = true;
         player.GetComponent<Renderer>().enabled = true;

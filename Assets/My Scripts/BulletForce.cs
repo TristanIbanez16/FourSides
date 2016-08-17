@@ -13,9 +13,13 @@ public class BulletForce : MonoBehaviour {
     GameObject TankEnemy;
     TankHealth tankHealth;
 
+    LevelManager levelManager;
+
     // Use this for initialization
     void Start () 
 	{
+        levelManager = FindObjectOfType<LevelManager>();
+
 		GetComponent<Rigidbody2D> ().AddForce (magnitude * transform.right);
 		Destroy (gameObject, 5);
 
@@ -36,6 +40,8 @@ public class BulletForce : MonoBehaviour {
         // if the object that the bullet hits has this tag, the object will be destroyed and then spawn a prefab
         if(other.tag == "Enemy")
         {
+            levelManager.EnemyDeath();
+
             Instantiate(enemyDeathEffect, other.transform.position, other.transform.rotation);
 
             Destroy(other.gameObject);

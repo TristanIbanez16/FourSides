@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour {
         }
 
         yield return new WaitForSeconds(0.2f);
-        float fadeTime = GameObject.Find("Level Fade").GetComponent<Fading>().BeginFade(1);
+        float fadeTime = GameObject.Find("Game Manager").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
         SceneManager.LoadScene("Menu");
 

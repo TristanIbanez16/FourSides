@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour {
     public AudioClip dying;
     public AudioClip playerRespawn;
     public AudioClip enemyDeath;
+    public AudioClip bulletImpact;
 
     public GameObject currentCheckpoint;
 
@@ -40,6 +41,12 @@ public class LevelManager : MonoBehaviour {
     public void EnemyDeath()
     {
         playerAudio.clip = enemyDeath;
+        playerAudio.Play();
+    }
+
+    public void BulletImpact()
+    {
+        playerAudio.clip = bulletImpact;
         playerAudio.Play();
     }
 

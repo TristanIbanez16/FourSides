@@ -3,8 +3,9 @@ using System.Collections;
 
 public class BulletForce : MonoBehaviour {
 
+
     // the public float magnitude for the speed of the bullet
-	public float magnitude = 1.0f;
+    public float magnitude = 1.0f;
 
     private int attackDamage = 15;
 
@@ -18,6 +19,7 @@ public class BulletForce : MonoBehaviour {
     // Use this for initialization
     void Start () 
 	{
+
         levelManager = FindObjectOfType<LevelManager>();
 
 		GetComponent<Rigidbody2D> ().AddForce (magnitude * transform.right);
@@ -53,6 +55,8 @@ public class BulletForce : MonoBehaviour {
             // if the bullet hits a wall or nothing it will destory itself and spawn a prefab
             Instantiate(bulletImpactEffect, transform.position, transform.rotation);
             Destroy (gameObject);
+
+            levelManager.BulletImpact();
         }
 
         if (other.tag == "Enemy Tank")

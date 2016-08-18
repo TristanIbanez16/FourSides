@@ -5,7 +5,18 @@ using UnityStandardAssets.ImageEffects;
 
 public class LevelChanger : MonoBehaviour {
 
+    public string levelGrade;
+
     public string Level;
+
+    string gradeValue;
+
+    [Header("Audio")]
+
+    public AudioSource playerAudio;                             // Reference to the AudioSource component.
+    public AudioClip finishLevel;
+
+    [Header("Grade Times")]
 
     public float ATimeRange;
     public float BTimeRange;
@@ -36,7 +47,7 @@ public class LevelChanger : MonoBehaviour {
 
     void Start()
     {
-
+        playerAudio = GetComponent<AudioSource>();
         Pause = GameObject.Find("Game Manager").GetComponent<PauseMenu>();
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         timer = GameObject.Find("Time").GetComponent<Timer>();
@@ -61,6 +72,9 @@ public class LevelChanger : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
+            playerAudio.clip = finishLevel;
+            playerAudio.Play();
+
             Pause.enabled = false;
             StartCoroutine("ChangeLevelCo");
         }
@@ -82,32 +96,52 @@ public class LevelChanger : MonoBehaviour {
 
         if (Timer.timer <= ATimeRange && LevelManager.playerDeaths == 0)
         {
+            gradeValue = "A+";
+
             blurEffect.enabled = true;
             Instantiate(APlusCanvas, transform.position, transform.rotation);
+
+            PlayerPrefs.SetString(levelGrade, gradeValue);
         }
 
         if (Timer.timer <= ATimeRange && LevelManager.playerDeaths == 1)
         {
+            gradeValue = "A";
+
             blurEffect.enabled = true;
             Instantiate(ACanvas, transform.position, transform.rotation);
+
+            PlayerPrefs.SetString(levelGrade, gradeValue);
         }
 
         if (Timer.timer >= ATimeRange && Timer.timer <= BTimeRange - 0.1f)
         {
+            gradeValue = "B";
+
             blurEffect.enabled = true;
             Instantiate(BCanvas, transform.position, transform.rotation);
+
+            PlayerPrefs.SetString(levelGrade, gradeValue);
         }
 
         if (Timer.timer >= BTimeRange && Timer.timer <= CTimeRange - 0.1f)
         {
+            gradeValue = "C";
+
             blurEffect.enabled = true;
             Instantiate(CCanvas, transform.position, transform.rotation);
+
+            PlayerPrefs.SetString(levelGrade, gradeValue);
         }
 
         if (Timer.timer >= CTimeRange)
         {
+            gradeValue = "D";
+
             blurEffect.enabled = true;
             Instantiate(DCanvas, transform.position, transform.rotation);
+
+            PlayerPrefs.SetString(levelGrade, gradeValue);
         }
 
         if (SpaceBarPressed == true)

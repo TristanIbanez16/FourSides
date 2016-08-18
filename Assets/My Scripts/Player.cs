@@ -4,6 +4,13 @@ using System.Collections;
 [RequireComponent (typeof(Controller2D))]
 public class Player : MonoBehaviour {
 
+    [Header("Audio")]
+
+    public AudioSource playerAudio;                             // Reference to the AudioSource component.
+    public AudioClip jump;
+
+    [Header("Player Attributes")]
+
     public float maxJumpHeight = 4;
     public float minJumpHeight = 1;
     public float timeToJumpApex = 0.4f;
@@ -43,6 +50,8 @@ public class Player : MonoBehaviour {
 
         X = transform.localScale.x;
 
+        playerAudio = GetComponent<AudioSource>();
+
         anim = GetComponent<Animator>();
 
         anim.SetBool("Shooting", false);
@@ -51,6 +60,24 @@ public class Player : MonoBehaviour {
 	
     void Update()
     {
+
+        anim.SetFloat("Speed", velocity.magnitude);
+        //Debug.Log("Velocity: " + velocity.magnitude);
+
+        if (Input.GetMouseButton(0))
+        {
+            anim.SetBool("Shooting", true);
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            anim.SetBool("Shooting", false);
+        }
+
+        bool wallSliding = false;
+
+        anim.SetBool("Grounded", controller.collisions.below);
+
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         int wallDirX = (controller.collisions.left) ? -1 : 1;
 
@@ -88,22 +115,6 @@ public class Player : MonoBehaviour {
             temp.x = -X;
             transform.localScale = temp;
         }
-
-        anim.SetFloat("Speed", velocity.magnitude);
-        //Debug.Log("Velocity: " + velocity.magnitude);
-        if(Input.GetMouseButtonDown(0))
-        {
-            anim.SetBool("Shooting", true);   
-        }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            anim.SetBool("Shooting", false);
-        }
-
-        bool wallSliding = false;
-
-        anim.SetBool("Grounded", controller.collisions.below);
 
         if((controller.collisions.left || controller.collisions.right) && !controller.collisions.below && velocity.y <0)
         {
@@ -144,8 +155,9 @@ public class Player : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            
 
-            if(wallSliding)
+            if (wallSliding)
             {
 
                 if(wallDirX == input.x)
@@ -170,13 +182,21 @@ public class Player : MonoBehaviour {
             if(controller.collisions.below)
             {
                 velocity.y = maxJumpVelocity;
+
+            }
+
+            if(controller.collisions.right || controller.collisions.left || controller.collisions.below)
+            {
+                playerAudio.clip = jump;
+                playerAudio.Play();
             }
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
 
-            if(velocity.y > minJumpVelocity)
+
+            if (velocity.y > minJumpVelocity)
             {
                 velocity.y = minJumpVelocity;
             }          

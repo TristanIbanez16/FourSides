@@ -50,21 +50,32 @@
      <Compile Include="Assets\My Scripts\BulletForce.cs" />
      <Compile Include="Assets\My Scripts\CameraFollow.cs" />
      <Compile Include="Assets\My Scripts\Checkpoint.cs" />
+     <Compile Include="Assets\My Scripts\ContinueButton.cs" />
      <Compile Include="Assets\My Scripts\Controller2D.cs" />
+     <Compile Include="Assets\My Scripts\DeletePrefs.cs" />
      <Compile Include="Assets\My Scripts\DestroyFinishedParticle.cs" />
      <Compile Include="Assets\My Scripts\DontDestroyOnLoad.cs" />
+     <Compile Include="Assets\My Scripts\EndOfWorld1.cs" />
+     <Compile Include="Assets\My Scripts\EndOfWorld2.cs" />
      <Compile Include="Assets\My Scripts\EnemyBulletForce.cs" />
      <Compile Include="Assets\My Scripts\EnemyScript.cs" />
      <Compile Include="Assets\My Scripts\EnemyShooter.cs" />
      <Compile Include="Assets\My Scripts\ExitButton.cs" />
      <Compile Include="Assets\My Scripts\Fading.cs" />
+     <Compile Include="Assets\My Scripts\GetGrade.cs" />
      <Compile Include="Assets\My Scripts\GunSpawnPointTurner.cs" />
      <Compile Include="Assets\My Scripts\GunTurner.cs" />
      <Compile Include="Assets\My Scripts\KillPlayer.cs" />
+     <Compile Include="Assets\My Scripts\LevelButton13.cs" />
+     <Compile Include="Assets\My Scripts\LevelButtonLevel7.cs" />
      <Compile Include="Assets\My Scripts\LevelChanger.cs" />
      <Compile Include="Assets\My Scripts\LevelIndicatorAnimation.cs" />
      <Compile Include="Assets\My Scripts\LevelManager.cs" />
+     <Compile Include="Assets\My Scripts\LevelPlayButton.cs" />
+     <Compile Include="Assets\My Scripts\MainMenu.cs" />
+     <Compile Include="Assets\My Scripts\MenuNavigator.cs" />
      <Compile Include="Assets\My Scripts\Pause1.cs" />
+     <Compile Include="Assets\My Scripts\PauseMenu.cs" />
      <Compile Include="Assets\My Scripts\PickupAnimation.cs" />
      <Compile Include="Assets\My Scripts\PickupManager.cs" />
      <Compile Include="Assets\My Scripts\PlayButton.cs" />
@@ -72,11 +83,15 @@
      <Compile Include="Assets\My Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\My Scripts\PositionRestter.cs" />
      <Compile Include="Assets\My Scripts\RaycastController.cs" />
+     <Compile Include="Assets\My Scripts\Restart.cs" />
      <Compile Include="Assets\My Scripts\ScalableCamera.cs" />
      <Compile Include="Assets\My Scripts\Shooter.cs" />
      <Compile Include="Assets\My Scripts\ShotDamage.cs" />
      <Compile Include="Assets\My Scripts\TankHealth.cs" />
+     <Compile Include="Assets\My Scripts\TimeReset.cs" />
+     <Compile Include="Assets\My Scripts\Timer.cs" />
      <Compile Include="Assets\My Scripts\TwoTargetMover.cs" />
+     <Compile Include="Assets\My Scripts\WorldSwitcher.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ActivateGameObject.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AddAnimationClip.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AddComponent.cs" />
@@ -748,10 +763,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="ConditionalExpression">
- <HintPath>C:/Users/jlahood/FourSides/FourSides/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
+ <HintPath>C:/Users/jlahood/Documents/FourSides/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
  </Reference>
  <Reference Include="PlayMaker">
- <HintPath>C:/Users/jlahood/FourSides/FourSides/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+ <HintPath>C:/Users/jlahood/Documents/FourSides/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.ImageEffects;
 
-public class LevelChanger : MonoBehaviour {
+public class LevelChanger : MonoBehaviour
+{
 
     public string levelGrade;
 
@@ -47,6 +48,7 @@ public class LevelChanger : MonoBehaviour {
 
     void Start()
     {
+
         playerAudio = GetComponent<AudioSource>();
         Pause = GameObject.Find("Game Manager").GetComponent<PauseMenu>();
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -70,7 +72,7 @@ public class LevelChanger : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             playerAudio.clip = finishLevel;
             playerAudio.Play();
@@ -82,7 +84,7 @@ public class LevelChanger : MonoBehaviour {
 
     public void OnClick()
     {
-        StartCoroutine("ChangeLevelCo");     
+        StartCoroutine("ChangeLevelCo");
     }
 
     public IEnumerator ChangeLevelCo()
@@ -152,17 +154,19 @@ public class LevelChanger : MonoBehaviour {
             SceneManager.LoadScene(Level);
         }
 
-    } 
-     public IEnumerator ChangeLevel()
-        {
+    }
+    public IEnumerator ChangeLevel()
+    {
 
         Time.timeScale = 1f;
         timer.enabled = false;
         yield return new WaitForSeconds(0.1f);
         float fadeTime = GameObject.Find("Game Manager").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
+
         SceneManager.LoadScene(Level);
-        }
 
     }
+}
+
 

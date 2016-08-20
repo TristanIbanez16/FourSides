@@ -13,8 +13,8 @@ public class MainMenu : MonoBehaviour {
     void Start()
     {
         playerAudio = GetComponent<AudioSource>();
-        BackgroundMusic = GameObject.Find("Audio Source");
-        BackgroundMusic = GameObject.Find("Music(Clone)");
+        BackgroundMusic = GameObject.Find("Music");
+        BackgroundMusic2 = GameObject.Find("Music(Clone)");
     }
 
     public void OnClick()

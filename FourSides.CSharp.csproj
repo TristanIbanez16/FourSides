@@ -105,6 +105,7 @@
     <Compile Include="Assets\My Scripts\MainMenu.cs" />
     <Compile Include="Assets\My Scripts\MenuNavigator.cs" />
     <Compile Include="Assets\My Scripts\MusicCreator.cs" />
+    <Compile Include="Assets\My Scripts\MusicDeletor.cs" />
     <Compile Include="Assets\My Scripts\Pause1.cs" />
     <Compile Include="Assets\My Scripts\PauseMenu.cs" />
     <Compile Include="Assets\My Scripts\PickupAnimation.cs" />
